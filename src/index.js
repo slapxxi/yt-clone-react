@@ -230,14 +230,68 @@ function VideoCard(props) {
 function Header() {
   return (
     <header className="header">
+      <Button className="header__menu">
+        <Icon name="menu" />
+      </Button>
       <Logo />
+      <Search className="header__search" />
       <Button className="header__btn-search">
         <Icon name="search" />
       </Button>
+      <div className="header__actions">
+        <Button>
+          <Icon name="camera" />
+        </Button>
+        <Button>
+          <Icon name="grid" />
+        </Button>
+        <Button>
+          <Icon name="bell">
+            <Notification>3</Notification>
+          </Icon>
+        </Button>
+      </div>
       <Button>
         <Avatar src="public/dude.jpg" />
       </Button>
     </header>
+  );
+}
+
+function Notification(props) {
+  const { children, ...rest } = props;
+  return (
+    <svg
+      className="notification"
+      width="16"
+      height="16"
+      x="calc(100% - 8px)"
+      y="-8"
+      {...rest}
+    >
+      <circle cx="8" cy="8" r="9" stroke="var(--theme-bg)" strokeWidth="2" />
+      <text
+        x="50%"
+        y="50%"
+        dominantBaseline="middle"
+        textAnchor="middle"
+        className="notification__text"
+      >
+        {children}
+      </text>
+    </svg>
+  );
+}
+
+function Search(props) {
+  const { className, ...rest } = props;
+  return (
+    <div className={`input-search ${className ?? ""}`} {...rest}>
+      <input id="search" type="search" placeholder="Search" />
+      <label htmlFor="search">
+        <Icon name="search" size={19} />
+      </label>
+    </div>
   );
 }
 
@@ -253,14 +307,14 @@ function Avatar(props) {
 function Button(props) {
   const { className, ...rest } = props;
   return (
-    <button className={`btn ${className}`} {...rest}>
+    <button className={`btn ${className ?? ""}`} {...rest}>
       {props.children}
     </button>
   );
 }
 
 function Icon(props) {
-  const { className, name, x, y, size = 20, ...rest } = props;
+  const { className, name, x, y, size = 20, children, ...rest } = props;
   const iconId = `#icon-${name}`;
   return (
     <svg
@@ -278,6 +332,7 @@ function Icon(props) {
         x={x}
         y={y}
       />
+      {children}
     </svg>
   );
 }

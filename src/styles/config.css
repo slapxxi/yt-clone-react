@@ -5,6 +5,7 @@
   --color-navy-dark: #192646;
   --color-gray: #898989;
   --color-lightest-gray: #f1f1f1;
+  --color-almost-white: #fafafa;
   --color-t-white: hsla(0, 0%, 100%, 1);
 
   --theme-bg: var(--color-t-white);
@@ -14,9 +15,12 @@
   --theme-primary: var(--color-red);
   --theme-tooltip: rgba(0, 0, 0, 0.5);
   --theme-overlay: rgba(255, 255, 255, 0.85);
+  --theme-input: var(--color-almost-white);
+  --theme-placeholder: #a9acb4;
 
   --bp-lg: 960px;
 
   --text-xs: 10px;
   --text-sm: 14px;
+  --text-md: 16px;
 }
