@@ -1,0 +1,21 @@
+.relative {
+  position: relative;
+}
+
+.sm\:hidden {
+  display: none;
+}
+
+.lg\:hidden {
+  display: initial;
+}
+
+@media screen and (min-width: 960px) {
+  .sm\:hidden {
+    display: initial;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+}

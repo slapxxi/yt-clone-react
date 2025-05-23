@@ -1,11 +1,22 @@
 :root {
   --color-black: #000;
   --color-white: #fff;
+  --color-red: #ff0000;
   --color-navy-dark: #192646;
+  --color-gray: #898989;
+  --color-lightest-gray: #f1f1f1;
   --color-t-white: hsla(0, 0%, 100%, 1);
 
   --theme-bg: var(--color-t-white);
   --theme-text: var(--color-navy-dark);
+  --theme-border: var(--color-lightest-gray);
+  --theme-em: var(--color-gray);
+  --theme-primary: var(--color-red);
+  --theme-tooltip: rgba(0, 0, 0, 0.5);
+  --theme-overlay: rgba(255, 255, 255, 0.85);
 
   --bp-lg: 960px;
+
+  --text-xs: 10px;
+  --text-sm: 14px;
 }
