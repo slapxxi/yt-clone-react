@@ -1,0 +1,11 @@
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --color-navy-dark: #192646;
+  --color-t-white: hsla(0, 0%, 100%, 1);
+
+  --theme-bg: var(--color-t-white);
+  --theme-text: var(--color-navy-dark);
+
+  --bp-lg: 960px;
+}

@@ -1,0 +1,51 @@
+/* Title */
+
+.title {
+  font-family: Mulish, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0;
+  color: var(--theme-text);
+}
+
+/* Button */
+.btn {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+  color: inherit;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+/* Logo */
+/* Em */
+/* Avatar */
+/* Switch */
+/* Tabs */
+/* Delimiter */
+/* NavList */
+.navlist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Icon */
+.icon {
+  overflow: visible;
+}
+
+/* Input */
+
+/* Link */
+.link {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,28 @@
+#App {
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  padding: 12px 16px;
+  gap: 24px;
+  background: var(--theme-bg);
+  backdrop-filter: blur(10px);
+  color: var(--theme-text);
+}
+
+.header__btn-search {
+  margin-left: auto;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--theme-bg);
+  z-index: 10;
+}
+
+@media screen and (max-width: var(--bp-lg)) {
+}
