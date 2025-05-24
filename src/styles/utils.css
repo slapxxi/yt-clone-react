@@ -2,20 +2,56 @@
   position: relative;
 }
 
+.hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.gap-40 {
+  gap: 40px;
+}
+
 .sm\:hidden {
   display: none;
 }
 
-.lg\:hidden {
-  display: initial;
-}
-
-@media screen and (min-width: 960px) {
-  .sm\:hidden {
-    display: initial;
-  }
-
+@media screen and (min-width: 1440px) {
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:block {
+    display: block;
   }
 }

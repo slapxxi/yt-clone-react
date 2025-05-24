@@ -12,11 +12,14 @@
   --theme-text: var(--color-navy-dark);
   --theme-border: var(--color-lightest-gray);
   --theme-em: var(--color-gray);
+  --theme-small: #c2c2c2;
   --theme-primary: var(--color-red);
+  --theme-secondary: var(--color-white);
   --theme-tooltip: rgba(0, 0, 0, 0.5);
   --theme-overlay: rgba(255, 255, 255, 0.85);
   --theme-input: var(--color-almost-white);
   --theme-placeholder: #a9acb4;
+  --theme-button: #c2c2c2;
 
   --bp-lg: 960px;
 
