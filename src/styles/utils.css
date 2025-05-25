@@ -1,3 +1,11 @@
+.overflow-auto {
+  overflow: auto;
+}
+
+.-translate-x-1\/2 {
+  transform: translateX(-50%);
+}
+
 .row-span-2 {
   grid-row: span 2 / span 2;
 }
@@ -26,6 +34,10 @@
   left: 0;
 }
 
+.left-1\/2 {
+  left: 50%;
+}
+
 .bottom-0 {
   bottom: 0;
 }
@@ -50,6 +62,10 @@
   display: flex;
 }
 
+.flex-1 {
+  flex: 1 0 0%;
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -64,6 +80,10 @@
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .self-start {
@@ -94,6 +114,11 @@
   margin-top: -35px;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mt-10 {
   margin-top: 10px;
 }
@@ -108,9 +133,23 @@
   margin-bottom: 20px;
 }
 
+.pl-16 {
+  padding-left: 16px;
+}
+
 .px-16 {
   padding-left: 16px;
   padding-right: 16px;
+}
+
+.py-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.mx-16 {
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .gap-5 {
@@ -141,16 +180,31 @@
   font-weight: 400;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
+.text-10 {
+  font-size: 10px;
+  line-height: 1;
+}
+
 .text-16 {
   font-size: 16px;
+  line-height: 1;
 }
 
 .text-20 {
   font-size: 20px;
+  line-height: 1;
 }
 
 .color-em {
   color: var(--theme-em);
+}
+
+.color-primary {
+  color: var(--theme-primary);
 }
 
 .color-text-light {
@@ -159,6 +213,14 @@
 
 .w-full {
   width: 100%;
+}
+
+.w-1\/12 {
+  width: 8.333333%;
+}
+
+.w-11\/12 {
+  width: 91.666667%;
 }
 
 .w-1\/2 {
@@ -181,7 +243,20 @@
   max-width: 1600px;
 }
 
+.border-tb {
+  border-top: 1px solid var(--theme-border);
+  border-bottom: 1px solid var(--theme-border);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
 @media screen and (min-width: 1440px) {
+  .lg\:rounded {
+    border-radius: 10px;
+  }
+
   .lg\:hidden {
     display: none;
   }
@@ -200,6 +275,10 @@
 
   .lg\:items-center {
     align-items: center;
+  }
+
+  .lg\:items-start {
+    align-items: flex-start;
   }
 
   .lg\:block {
@@ -221,5 +300,31 @@
 
   .lg\:flex-row {
     flex-direction: row;
+  }
+
+  .lg\:flex-col {
+    flex-direction: column;
+  }
+
+  .lg\:p-0 {
+    padding: 0;
+  }
+
+  .lg\:my-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .lg\:items-end {
+    align-items: flex-end;
+  }
+
+  .lg\:text-36 {
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
   }
 }

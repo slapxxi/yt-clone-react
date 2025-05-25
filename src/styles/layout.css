@@ -2,6 +2,11 @@
   min-height: 100vh;
 }
 
+.upnext {
+  padding: 0 16px;
+  margin-bottom: 72px;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -104,9 +109,14 @@
   overflow: hidden;
 }
 
-.content_channel {
+.content_channel,
+.content_player {
   padding-left: 0;
   padding-right: 0;
+}
+
+.content_player {
+  margin-bottom: 20px;
 }
 
 .video-list {
@@ -135,6 +145,16 @@
   display: grid;
 }
 
+.subscribe {
+  width: calc(100% - 32px);
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid var(--theme-border);
+  border-bottom: 1px solid var(--theme-border);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 @media screen and (min-width: 1440px) {
   .channel-content {
     gap: 20px;
@@ -145,6 +165,7 @@
   .channel-cover {
     border-radius: 14px;
   }
+
   .content {
     margin-top: 50px;
     margin-bottom: auto;
@@ -176,6 +197,8 @@
   }
 
   .sidebar {
+    display: flex;
+    flex-direction: column;
     left: 0;
     top: 68px;
     padding: 30px;
@@ -215,6 +238,13 @@
     padding-top: 20px;
     padding-right: 0;
     margin-left: 250px;
+  }
+
+  .content_player {
+    margin-left: 0;
+    margin-right: 250px;
+    padding-right: 80px;
+    padding-left: 80px;
   }
 
   .sidebar-extra,
@@ -258,5 +288,31 @@
 
   .sidebar__settings span {
     margin-left: 12px;
+  }
+
+  .upnext {
+    position: fixed;
+    top: 58px;
+    right: 0;
+    bottom: 0;
+    padding: 0 20px;
+    padding-right: 20px;
+    margin: 0;
+    background-color: var(--theme-bg);
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    z-index: 10;
+  }
+
+  .upnext:hover {
+    scrollbar-width: thin;
+    scrollbar-color: initial;
+  }
+
+  .subscribe {
+    width: 100%;
+    padding-top: 40px;
   }
 }

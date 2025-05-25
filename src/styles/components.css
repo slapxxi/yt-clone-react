@@ -1,3 +1,107 @@
+.switch {
+  position: relative;
+  width: 30px;
+  height: 20px;
+  border-radius: 50px;
+  background-color: #c0c0c0;
+}
+
+.switch:has(input:checked) {
+  background-color: #fafafa;
+}
+
+.switch:has(input:checked) .switch__thumb {
+  background-color: #2196f3;
+  transform: translateX(10px);
+}
+
+.switch__input {
+  position: absolute;
+  opacity: 0;
+  width: 300%;
+  top: 0;
+  height: 100%;
+  left: -100%;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.switch__thumb {
+  background-color: #2196f3;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+}
+
+.switch__thumb {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #888;
+  transition: transform 0.05s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.player-controls {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 95%;
+  background: hsla(0, 0%, 24%, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 9px 18px;
+  color: var(--color-white);
+}
+
+.player-controls-hd {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+  gap: 14px;
+  width: 95%;
+  border-radius: 10px;
+  padding: 9px 18px;
+  color: var(--color-white);
+}
+
+.player-progress {
+  height: 5px;
+  background-color: hsla(0, 0%, 100%, 0.4);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.player-volume {
+  width: 30px;
+  height: 5px;
+  background-color: hsla(0, 0%, 100%, 0.4);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.player-volume > div {
+  width: 70%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.player-progress__track {
+  width: 40%;
+  height: 100%;
+  background-color: var(--theme-primary);
+}
+
 .cover {
   object-fit: cover;
   border-radius: 14px;
@@ -73,6 +177,18 @@
 
 .btn_primary:hover {
   filter: brightness(0.85);
+}
+
+.btn_secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #fafafa;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: var(--text-md);
+  color: var(--theme-text);
 }
 
 .btn_round {
@@ -191,7 +307,10 @@
 }
 
 /* Logo */
-/* Em */
+.logo_player {
+  flex: 0.8 0 0;
+}
+
 /* Avatar */
 .avatar {
   width: 26px;
@@ -304,5 +423,15 @@
   .tabs {
     justify-content: flex-start;
     gap: 69px;
+  }
+
+  .player-controls-hd {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .logo_player {
+    flex: 0 1 auto;
   }
 }
