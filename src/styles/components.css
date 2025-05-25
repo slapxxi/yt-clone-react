@@ -121,7 +121,7 @@
   color: var(--theme-em);
 }
 
-.video-card__info > div {
+.video-card__info-block {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -201,6 +201,7 @@
 
 /* Link */
 .link {
+  display: contents;
   text-decoration: none;
   color: inherit;
 }

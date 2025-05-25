@@ -277,7 +277,7 @@ function VideoCard(props) {
           alt={alt}
           className={`video-card__cover video-card__cover_${size}`}
         />
-        <time datetime="PT2M30S" className="video-card__duration">
+        <time dateTime="PT2M30S" className="video-card__duration">
           {duration}
         </time>
       </div>
@@ -285,12 +285,12 @@ function VideoCard(props) {
         {title}
       </Title>
       <div className="video-card__info">
-        <div>
+        <div className="video-card__info-block">
           <span>{views} views</span>
           <Icon name="separator" size={2} />
-          <time datetime="2022-01-01">{createdAt}</time>
+          <time dateTime="2022-01-01">{createdAt}</time>
         </div>
-        <a rel="author">{author}</a>
+        <span rel="author">{author}</span>
       </div>
     </figure>
   );
@@ -528,7 +528,7 @@ function Sidebar() {
 function Link(props) {
   const { children, className, ...rest } = props;
   return (
-    <a href="#" className={`link ${className}`} {...rest}>
+    <a href="#" className={`link ${className ?? ""}`} {...rest}>
       {children}
     </a>
   );
