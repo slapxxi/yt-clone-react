@@ -54,4 +54,8 @@
   .lg\:block {
     display: block;
   }
+
+  .lg\:ml-50 {
+    margin-left: 50px;
+  }
 }

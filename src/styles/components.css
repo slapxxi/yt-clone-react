@@ -43,6 +43,10 @@
   color: inherit;
 }
 
+.btn:hover {
+  filter: brightness(0.85);
+}
+
 .btn:active {
   transform: translateY(1px);
 }
@@ -56,6 +60,10 @@
   font-size: var(--text-md);
 }
 
+.btn_primary:hover {
+  filter: brightness(0.85);
+}
+
 .btn_round {
   display: inline-flex;
   align-items: center;
@@ -66,6 +74,10 @@
   width: 28px;
   height: 28px;
   aspect-ratio: 1;
+}
+
+.btn_round:hover {
+  filter: brightness(0.85);
 }
 
 /* VideoCard */
@@ -120,7 +132,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  background-color: var(--theme-overlay);
+  background-color: var(--theme-input);
   backdrop-filter: blur(10px);
   border-radius: 22px;
   padding-right: 16px;
@@ -128,7 +140,8 @@
 }
 
 .input-search:has(input:focus) {
-  outline: 1px solid var(--theme-border);
+  filter: brightness(0.98);
+  outline: 1px solid hsla(0, 0%, 0%, 0.1);
 }
 
 .input-search input {

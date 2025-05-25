@@ -8,10 +8,41 @@ function App() {
   );
 }
 
+function Header() {
+  return (
+    <header className="header">
+      <Button className="header__menu">
+        <Icon name="menu" />
+      </Button>
+      <Logo />
+      <Search className="header__search lg:ml-50" />
+      <Button className="header__btn-search">
+        <Icon name="search" />
+      </Button>
+      <div className="header__actions">
+        <Button>
+          <Icon name="camera" />
+        </Button>
+        <Button>
+          <Icon name="grid" />
+        </Button>
+        <Button>
+          <Icon name="bell">
+            <Notification>3</Notification>
+          </Icon>
+        </Button>
+      </div>
+      <Button>
+        <Avatar src="public/dude.jpg" />
+      </Button>
+    </header>
+  );
+}
+
 function Content() {
   return (
     <main className="content">
-      <section>
+      <section className="home-section">
         <section className="section-header lg:flex hidden">
           <Avatar src="public/gussie.jpg" size="lg" />
           <Title size="lg">Dollie Blair</Title>
@@ -80,9 +111,9 @@ function Content() {
         </NavList>
       </section>
 
-      <section className="home-recommended">
+      <section className="home-section">
         <header className="section-header">
-          <Title size="lg" className="home-recommended__title">
+          <Title size="lg" className="home-section__title">
             Recommended
           </Title>
           <div className="content-extra ml-auto lg:flex items-center gap-40">
@@ -133,10 +164,10 @@ function Content() {
         </NavList>
       </section>
 
-      <section className="home-recommended">
+      <section className="home-section">
         <header className="section-header">
           <Avatar src="public/food.jpg" size="lg" className="content-extra" />
-          <Title size="lg" className="home-recommended__title">
+          <Title size="lg" className="home-section__title">
             Food &amp; Drink
           </Title>
           <small className="small content-extra">
@@ -262,37 +293,6 @@ function VideoCard(props) {
         <a rel="author">{author}</a>
       </div>
     </figure>
-  );
-}
-
-function Header() {
-  return (
-    <header className="header">
-      <Button className="header__menu">
-        <Icon name="menu" />
-      </Button>
-      <Logo />
-      <Search className="header__search" />
-      <Button className="header__btn-search">
-        <Icon name="search" />
-      </Button>
-      <div className="header__actions">
-        <Button>
-          <Icon name="camera" />
-        </Button>
-        <Button>
-          <Icon name="grid" />
-        </Button>
-        <Button>
-          <Icon name="bell">
-            <Notification>3</Notification>
-          </Icon>
-        </Button>
-      </div>
-      <Button>
-        <Avatar src="public/dude.jpg" />
-      </Button>
-    </header>
   );
 }
 
