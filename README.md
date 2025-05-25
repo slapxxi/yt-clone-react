@@ -31,6 +31,6 @@ A responsive YouTube clone built with React.
 
 Open either `*.html` or `*-react-inline.html` files directly in the browser to view finished pages.
 
-3. Profit!
+3. **Profit!**
 
 Congrats you're here <------o
