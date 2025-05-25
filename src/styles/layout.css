@@ -17,6 +17,11 @@
   z-index: 10;
 }
 
+.header_channel {
+  justify-content: space-between;
+  gap: 5px;
+}
+
 .header__btn-search {
   margin-left: auto;
 }
@@ -99,6 +104,11 @@
   overflow: hidden;
 }
 
+.content_channel {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .video-list {
   display: flex;
   flex-direction: column;
@@ -117,7 +127,24 @@
   margin-bottom: 20px;
 }
 
+.channel-cover {
+  width: 100%;
+}
+
+.channel-content {
+  display: grid;
+}
+
 @media screen and (min-width: 1440px) {
+  .channel-content {
+    gap: 20px;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: min-content;
+  }
+
+  .channel-cover {
+    border-radius: 14px;
+  }
   .content {
     margin-top: 50px;
     margin-bottom: auto;

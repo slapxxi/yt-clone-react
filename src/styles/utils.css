@@ -1,5 +1,45 @@
+.row-span-2 {
+  grid-row: span 2 / span 2;
+}
+
+.col-start-2 {
+  grid-column-start: 2;
+}
+
 .relative {
   position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.right-10 {
+  right: 10px;
+}
+
+.bottom-10 {
+  bottom: 10px;
 }
 
 .hidden {
@@ -10,6 +50,14 @@
   display: flex;
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
 .items-center {
   align-items: center;
 }
@@ -18,12 +66,55 @@
   justify-content: center;
 }
 
+.self-start {
+  align-self: flex-start;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
+}
+
+.ml-0 {
+  margin-left: 0;
+}
+
 .ml-auto {
   margin-left: auto;
 }
 
+.mb-10 {
+  margin-bottom: 10px;
+}
+
 .mb-30 {
   margin-bottom: 30px;
+}
+
+.-mt-35 {
+  margin-top: -35px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.my-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.my-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.px-16 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.gap-5 {
+  gap: 5px;
 }
 
 .gap-10 {
@@ -34,12 +125,60 @@
   gap: 20px;
 }
 
+.gap-30 {
+  gap: 30px;
+}
+
 .gap-40 {
   gap: 40px;
 }
 
 .sm\:hidden {
   display: none;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.text-16 {
+  font-size: 16px;
+}
+
+.text-20 {
+  font-size: 20px;
+}
+
+.color-em {
+  color: var(--theme-em);
+}
+
+.color-text-light {
+  color: var(--theme-text-light);
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.max-w-prose {
+  max-width: 65ch;
+}
+
+.max-w-540 {
+  max-width: 540px;
+}
+
+.max-w-960 {
+  max-width: 960px;
+}
+
+.max-w-1600 {
+  max-width: 1600px;
 }
 
 @media screen and (min-width: 1440px) {
@@ -51,11 +190,36 @@
     display: flex;
   }
 
+  .lg\:gap-10 {
+    gap: 10px;
+  }
+
+  .lg\:gap-15 {
+    gap: 15px;
+  }
+
+  .lg\:items-center {
+    align-items: center;
+  }
+
   .lg\:block {
     display: block;
   }
 
   .lg\:ml-50 {
     margin-left: 50px;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0;
+  }
+
+  .lg\:my-30 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
   }
 }

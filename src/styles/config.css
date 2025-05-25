@@ -9,6 +9,7 @@
 
   --theme-bg: var(--color-t-white);
   --theme-text: var(--color-navy-dark);
+  --theme-text-light: #666666;
   --theme-border: var(--color-lightest-gray);
   --theme-em: var(--color-gray);
   --theme-small: #c2c2c2;
