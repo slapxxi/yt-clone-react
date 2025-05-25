@@ -170,6 +170,13 @@
       <svg viewBox="0 0 30 30" id="icon-separator">
         <circle cx="15" cy="15" r="15" />
       </svg>
+      <svg viewBox="0 0 5 19" id="icon-dots">
+        <path
+          d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM5 9.5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Zm0 7a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+        />
+      </svg>
     </svg>
 
     <div id="App"></div>
@@ -187,13 +194,16 @@
 
       function Header() {
         return (
-          <header className="header">
+          <header className="header header_channel">
             <Button className="header__menu">
               <Icon name="menu" />
             </Button>
-            <Logo />
+            <div className="flex items-center gap-10">
+              <Logo />
+              <Title>Margaret Phelps</Title>
+            </div>
             <Search className="header__search lg:ml-50" />
-            <Button className="header__btn-search">
+            <Button className="header__btn-search ml-0">
               <Icon name="search" />
             </Button>
             <div className="header__actions">
@@ -210,7 +220,7 @@
               </Button>
             </div>
             <Button>
-              <Avatar src="public/dude.jpg" />
+              <Icon name="dots" />
             </Button>
           </header>
         );
@@ -218,205 +228,153 @@
 
       function Content() {
         return (
-          <main className="content">
-            <section className="home-section">
-              <section className="section-header lg:flex hidden">
-                <Avatar src="public/gussie.jpg" size="lg" />
-                <Title size="lg">Dollie Blair</Title>
-              </section>
-              <NavList className="video-list">
-                <NavListItem className="video-list__item">
-                  <Link>
-                    <VideoCard
-                      src="public/cover.jpg"
-                      duration="2:30"
-                      views="80k"
-                      title="A Brief History of Creation"
-                    />
-                  </Link>
-                </NavListItem>
-                <NavListItem className="video-list__item">
-                  <Link>
-                    <VideoCard
-                      src="public/cover2.jpg"
-                      duration="8:00"
-                      views="123k"
-                      title="Selecting the Right Hotel"
-                    />
-                  </Link>
-                </NavListItem>
-                <NavListItem className="video-list__item">
-                  <Link>
-                    <VideoCard
-                      src="public/cover3.jpg"
-                      duration="6:40"
-                      views="11k"
-                      title="Asteroids"
-                    />
-                  </Link>
-                </NavListItem>
-                <NavListItem className="video-list__item">
-                  <Link>
-                    <VideoCard
-                      src="public/cover4.jpg"
-                      duration="6:40"
-                      views="11k"
-                      title="Telescopes 101"
-                    />
-                  </Link>
-                </NavListItem>
-                <NavListItem className="video-list__item">
-                  <Link>
-                    <VideoCard
-                      src="public/cover5.jpg"
-                      duration="6:40"
-                      views="11k"
-                      title="Telescopes 101"
-                    />
-                  </Link>
-                </NavListItem>
-                <NavListItem className="video-list__item">
-                  <Link>
-                    <VideoCard
-                      src="public/cover6.jpg"
-                      duration="6:40"
-                      views="11k"
-                      title="Telescopes 101"
-                    />
-                  </Link>
-                </NavListItem>
-              </NavList>
-            </section>
-
-            <section className="home-section">
-              <header className="section-header">
-                <Title size="lg" className="home-section__title">
-                  Recommended
-                </Title>
-                <div className="content-extra ml-auto lg:flex items-center gap-40">
-                  <div className="flex items-center gap-10">
-                    <Button type="round">
-                      <Icon name="chevron-left" size={11}></Icon>
-                    </Button>
-                    <Button type="round">
-                      <Icon name="chevron-right" size={11}></Icon>
-                    </Button>
-                  </div>
-                </div>
-              </header>
-              <NavList className="video-list">
-                <NavListItem className="video-list__item">
-                  <Link>
-                    <VideoCard
-                      src="public/cover7.jpg"
-                      duration="2:30"
-                      views="80k"
-                      title="A Brief History of Creation"
-                      size="lg"
-                    />
-                  </Link>
-                </NavListItem>
-                <NavListItem className="video-list__item">
-                  <Link>
-                    <VideoCard
-                      src="public/cover8.jpg"
-                      duration="8:00"
-                      views="123k"
-                      title="Selecting the Right Hotel"
-                      size="lg"
-                    />
-                  </Link>
-                </NavListItem>
-                <NavListItem className="video-list__item">
-                  <Link>
-                    <VideoCard
-                      src="public/cover9.jpg"
-                      duration="6:40"
-                      views="11k"
-                      title="Asteroids"
-                      size="lg"
-                    />
-                  </Link>
-                </NavListItem>
-              </NavList>
-            </section>
-
-            <section className="home-section">
-              <header className="section-header">
-                <Avatar
-                  src="public/food.jpg"
-                  size="lg"
-                  className="content-extra"
+          <main className="content content_channel">
+            <header className="sticky top-0">
+              <svg viewBox="0 0 320 100" className="channel-cover max-w-1600">
+                <image
+                  href="public/backdrop.jpg"
+                  width="100%"
+                  height="100%"
+                  preserveAspectRatio="xMidYMid slice"
                 />
-                <Title size="lg" className="home-section__title">
-                  Food &amp; Drink
+              </svg>
+              <div className="px-16 -mt-35 flex flex-col gap-5 lg:flex-row lg:mt-0 lg:my-30 lg:items-center lg:gap-15 max-w-1600">
+                <Avatar src="public/nora.jpg" size="xl" />
+                <div className="flex flex-col gap-5">
+                  <Title className="text-20">Margaret Phelps</Title>
+                  <Text className="color-em" size="sm">
+                    245K subscribed
+                  </Text>
+                </div>
+                <Button className="hidden lg:block ml-auto color-em">
+                  <Icon name="bell" />
+                </Button>
+                <Button type="primary" className="self-start my-20">
+                  Subscribe 2.3m
+                </Button>
+              </div>
+            </header>
+
+            <div className="channel-content">
+              <nav className="px-16 my-10">
+                <Tabs className="max-w-960">
+                  <TabsItem active>Home</TabsItem>
+                  <TabsItem>Videos</TabsItem>
+                  <TabsItem>Playlists</TabsItem>
+                  <TabsItem className="hidden lg:block">Channels</TabsItem>
+                  <TabsItem className="hidden lg:block">Discussion</TabsItem>
+                  <TabsItem className="hidden lg:block">About</TabsItem>
+                  <TabsItem className="hidden lg:block">
+                    <Icon name="search" />
+                  </TabsItem>
+                  <TabsItem className="lg:hidden">
+                    <Icon name="chevron-down" />
+                  </TabsItem>
+                </Tabs>
+              </nav>
+
+              <aside className="hidden lg:block mt-10 row-span-2 col-start-2">
+                <Title className="mb-30 color-em font-normal">
+                  Recommended Channels
                 </Title>
-                <small className="small content-extra">
-                  Recommended channel for you
-                </small>
-                <div className="content-extra ml-auto lg:flex items-center gap-40">
-                  <Button type="primary">Subscribe 2.3m</Button>
-                  <div className="flex items-center gap-10">
-                    <Button type="round">
-                      <Icon name="chevron-left" size={11}></Icon>
-                    </Button>
-                    <Button type="round">
-                      <Icon name="chevron-right" size={11}></Icon>
-                    </Button>
+                <NavList className="flex flex-col gap-30">
+                  <NavListItem>
+                    <Link href="#" className="flex items-center gap-20">
+                      <Avatar src="public/flora.jpg" size="lg" />
+                      <Title>Flora Benson</Title>
+                    </Link>
+                  </NavListItem>
+                  <NavListItem>
+                    <Link href="#" className="flex items-center gap-20">
+                      <Avatar src="public/violet.jpg" size="lg" />
+                      <Title>Violet Cobb</Title>
+                    </Link>
+                  </NavListItem>
+                  <NavListItem>
+                    <Link href="#" className="flex items-center gap-20">
+                      <Avatar src="public/phil.jpg" size="lg" />
+                      <Title>Phillip Mullins</Title>
+                    </Link>
+                  </NavListItem>
+                </NavList>
+              </aside>
+
+              <figure
+                className="hidden lg:flex gap-30"
+                style={{ gridColumn: "1/2", gridRow: "2" }}
+              >
+                <div className="relative max-w-540">
+                  <img
+                    src="public/cover21.jpg"
+                    alt="Choosing the Best..."
+                    className="w-full cover"
+                  />
+                  <time className="tag absolute bottom-10 right-10">2:30</time>
+                </div>
+                <div className="flex flex-col justify-center gap-30 max-w-prose">
+                  <div>
+                    <Title size="lg" className="mb-10">
+                      Choosing The Best Audio Player Software For Your Computer
+                    </Title>
+                    <Text className="color-text-light">
+                      Your cheap internet-based banner advertising will become
+                      one of the sought for ads there are. Today, the world of
+                      Internet advertising is rapidly evolving beyond banner ads
+                      and intrusive pop-ups. Bayles A common medium for
+                      advertising on the Internet is the use of banner ads.
+                    </Text>
+                  </div>
+                  <div className="flex items-center gap-10 mt-10 color-em">
+                    <span>11k views</span>
+                    <Icon name="separator" size={3} />
+                    <time>6 months ago</time>
                   </div>
                 </div>
-              </header>
+              </figure>
+            </div>
 
+            <section className="my-20">
+              <header className="section-header hidden lg:flex">
+                <Title size="lg" className="home-section__title">
+                  Margaret Phelps Videos
+                </Title>
+                <div className="flex gap-10 ml-auto">
+                  <Button type="round">
+                    <Icon name="chevron-left" size={11}></Icon>
+                  </Button>
+                  <Button type="round">
+                    <Icon name="chevron-right" size={11}></Icon>
+                  </Button>
+                </div>
+              </header>
               <NavList className="video-list">
                 <NavListItem className="video-list__item">
                   <Link>
                     <VideoCard
-                      src="public/cover10.jpg"
+                      src="public/cover17.jpg"
                       duration="2:30"
                       views="80k"
-                      title="Astronomy or Astrology"
+                      title="A Brief History of Creation"
                     />
                   </Link>
                 </NavListItem>
                 <NavListItem className="video-list__item">
                   <Link>
                     <VideoCard
-                      src="public/cover11.jpg"
+                      src="public/cover16.jpg"
                       duration="8:00"
                       views="123k"
-                      title="Advertising Outdoors"
+                      title="Selecting the Right Hotel"
                     />
                   </Link>
                 </NavListItem>
                 <NavListItem className="video-list__item">
                   <Link>
                     <VideoCard
-                      src="public/cover12.jpg"
+                      src="public/cover18.jpg"
                       duration="6:40"
                       views="11k"
-                      title="Radio Astronomy"
-                    />
-                  </Link>
-                </NavListItem>
-                <NavListItem className="video-list__item">
-                  <Link>
-                    <VideoCard
-                      src="public/cover13.jpg"
-                      duration="6:40"
-                      views="45k"
-                      createdAt="2 months ago"
-                      title="A Good Autoresponder"
-                    />
-                  </Link>
-                </NavListItem>
-                <NavListItem className="video-list__item">
-                  <Link>
-                    <VideoCard
-                      src="public/cover14.jpg"
-                      duration="1:56"
-                      views="86k"
-                      createdAt="7 days ago"
-                      title="Baby Monitoring Technology"
+                      title="Asteroids"
                     />
                   </Link>
                 </NavListItem>
@@ -424,16 +382,69 @@
                   <Link>
                     <VideoCard
                       src="public/cover15.jpg"
-                      duration="8:56"
-                      views="8k"
-                      createdAt="3 days ago"
-                      title="Asteroids"
+                      duration="6:40"
+                      views="11k"
+                      title="Telescopes 101"
+                    />
+                  </Link>
+                </NavListItem>
+                <NavListItem className="video-list__item">
+                  <Link>
+                    <VideoCard
+                      src="public/cover19.jpg"
+                      duration="6:40"
+                      views="11k"
+                      title="A Good Autoresponder"
+                    />
+                  </Link>
+                </NavListItem>
+                <NavListItem className="video-list__item">
+                  <Link>
+                    <VideoCard
+                      src="public/cover20.jpg"
+                      duration="6:40"
+                      views="11k"
+                      title="Baby Monitor Technology"
                     />
                   </Link>
                 </NavListItem>
               </NavList>
             </section>
           </main>
+        );
+      }
+
+      function Tabs(props) {
+        const { children, className, ...rest } = props;
+        return (
+          <div className={`tabs ${className ?? ""}`} role="tablist" {...rest}>
+            {children}
+          </div>
+        );
+      }
+
+      function TabsItem(props) {
+        const { children, className, active, ...rest } = props;
+        return (
+          <button
+            className={`tabs__item ${className ?? ""} ${active ? "tabs__item_active" : ""}`}
+            role="tab"
+            {...rest}
+          >
+            {children}
+          </button>
+        );
+      }
+
+      function Text(props) {
+        const { children, size, ...rest } = props;
+        return (
+          <p
+            className={`text ${props.className ?? ""} ${size ? `text_${size}` : ""}`}
+            {...rest}
+          >
+            {children}
+          </p>
         );
       }
 
@@ -580,7 +591,7 @@
       function Logo() {
         return (
           <a href="/">
-            <img src="public/yt-logo.svg" alt="YT logo" />
+            <img src="public/yt-icon.svg" alt="YT logo" />
           </a>
         );
       }

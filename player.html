@@ -174,7 +174,9 @@
               fill="currentColor"
             ></use>
           </svg></button
-        ><a href="/"><img src="public/yt-logo.svg" alt="YT logo" /></a>
+        ><a href="/" class="logo_player"
+          ><img src="public/yt-logo.svg" alt="YT logo"
+        /></a>
         <div class="input-search header__search lg:ml-50">
           <input id="search" type="search" placeholder="Search" /><label
             for="search"
@@ -251,7 +253,16 @@
             </svg>
           </button>
         </div>
-        <button class="btn btn_def">
+        <button class="btn ml-auto lg:hidden btn_def">
+          <svg viewBox="0 0 24 24" width="20" height="20" class="icon">
+            <use
+              href="#icon-dots"
+              width="24"
+              height="24"
+              fill="currentColor"
+            ></use>
+          </svg></button
+        ><button class="btn hidden lg:block btn_def">
           <svg viewBox="0 0 24 24" class="avatar avatar_sm">
             <image
               href="public/dude.jpg"
@@ -263,7 +274,7 @@
           </svg>
         </button>
       </header>
-      <aside class="sidebar">
+      <aside class="sidebar lg:hidden">
         <ul class="navlist sidebar__navlist">
           <li class="navlist__item">
             <a
@@ -581,257 +592,122 @@
           </button>
         </div>
       </aside>
-      <main class="content">
-        <section class="home-section">
-          <section class="section-header lg:flex hidden">
-            <svg viewBox="0 0 24 24" class="avatar avatar_lg">
-              <image
-                href="public/gussie.jpg"
-                width="24"
-                height="24"
-                clip-path="url(#clip-circle)"
-                preserveAspectRatio="xMidYMid slice"
-              ></image>
-            </svg>
-            <h2 class="title title_lg">Dollie Blair</h2>
-          </section>
-          <ul class="navlist video-list">
-            <li class="navlist__item video-list__item">
-              <a href="#" class="link"
-                ><figure class="video-card">
-                  <div class="relative">
-                    <img
-                      src="public/cover.jpg"
-                      class="video-card__cover video-card__cover_sm"
-                    /><time datetime="PT2M30S" class="video-card__duration"
-                      >2:30</time
-                    >
-                  </div>
-                  <figcaption class="title title_sm video-card__title">
-                    A Brief History of Creation
-                  </figcaption>
-                  <div class="video-card__info">
-                    <div class="video-card__info-block">
-                      <span>80k views</span
-                      ><svg
-                        viewBox="0 0 24 24"
-                        width="2"
-                        height="2"
-                        class="icon"
-                      >
-                        <use
-                          href="#icon-separator"
-                          width="24"
-                          height="24"
-                          fill="currentColor"
-                        ></use></svg
-                      ><time datetime="2022-01-01">3 days ago</time>
-                    </div>
-                    <span rel="author">Dollie Blair</span>
-                  </div>
-                </figure></a
-              >
-            </li>
-            <li class="navlist__item video-list__item">
-              <a href="#" class="link"
-                ><figure class="video-card">
-                  <div class="relative">
-                    <img
-                      src="public/cover2.jpg"
-                      class="video-card__cover video-card__cover_sm"
-                    /><time datetime="PT2M30S" class="video-card__duration"
-                      >8:00</time
-                    >
-                  </div>
-                  <figcaption class="title title_sm video-card__title">
-                    Selecting the Right Hotel
-                  </figcaption>
-                  <div class="video-card__info">
-                    <div class="video-card__info-block">
-                      <span>123k views</span
-                      ><svg
-                        viewBox="0 0 24 24"
-                        width="2"
-                        height="2"
-                        class="icon"
-                      >
-                        <use
-                          href="#icon-separator"
-                          width="24"
-                          height="24"
-                          fill="currentColor"
-                        ></use></svg
-                      ><time datetime="2022-01-01">3 days ago</time>
-                    </div>
-                    <span rel="author">Dollie Blair</span>
-                  </div>
-                </figure></a
-              >
-            </li>
-            <li class="navlist__item video-list__item">
-              <a href="#" class="link"
-                ><figure class="video-card">
-                  <div class="relative">
-                    <img
-                      src="public/cover3.jpg"
-                      class="video-card__cover video-card__cover_sm"
-                    /><time datetime="PT2M30S" class="video-card__duration"
-                      >6:40</time
-                    >
-                  </div>
-                  <figcaption class="title title_sm video-card__title">
-                    Asteroids
-                  </figcaption>
-                  <div class="video-card__info">
-                    <div class="video-card__info-block">
-                      <span>11k views</span
-                      ><svg
-                        viewBox="0 0 24 24"
-                        width="2"
-                        height="2"
-                        class="icon"
-                      >
-                        <use
-                          href="#icon-separator"
-                          width="24"
-                          height="24"
-                          fill="currentColor"
-                        ></use></svg
-                      ><time datetime="2022-01-01">3 days ago</time>
-                    </div>
-                    <span rel="author">Dollie Blair</span>
-                  </div>
-                </figure></a
-              >
-            </li>
-            <li class="navlist__item video-list__item">
-              <a href="#" class="link"
-                ><figure class="video-card">
-                  <div class="relative">
-                    <img
-                      src="public/cover4.jpg"
-                      class="video-card__cover video-card__cover_sm"
-                    /><time datetime="PT2M30S" class="video-card__duration"
-                      >6:40</time
-                    >
-                  </div>
-                  <figcaption class="title title_sm video-card__title">
-                    Telescopes 101
-                  </figcaption>
-                  <div class="video-card__info">
-                    <div class="video-card__info-block">
-                      <span>11k views</span
-                      ><svg
-                        viewBox="0 0 24 24"
-                        width="2"
-                        height="2"
-                        class="icon"
-                      >
-                        <use
-                          href="#icon-separator"
-                          width="24"
-                          height="24"
-                          fill="currentColor"
-                        ></use></svg
-                      ><time datetime="2022-01-01">3 days ago</time>
-                    </div>
-                    <span rel="author">Dollie Blair</span>
-                  </div>
-                </figure></a
-              >
-            </li>
-            <li class="navlist__item video-list__item">
-              <a href="#" class="link"
-                ><figure class="video-card">
-                  <div class="relative">
-                    <img
-                      src="public/cover5.jpg"
-                      class="video-card__cover video-card__cover_sm"
-                    /><time datetime="PT2M30S" class="video-card__duration"
-                      >6:40</time
-                    >
-                  </div>
-                  <figcaption class="title title_sm video-card__title">
-                    Telescopes 101
-                  </figcaption>
-                  <div class="video-card__info">
-                    <div class="video-card__info-block">
-                      <span>11k views</span
-                      ><svg
-                        viewBox="0 0 24 24"
-                        width="2"
-                        height="2"
-                        class="icon"
-                      >
-                        <use
-                          href="#icon-separator"
-                          width="24"
-                          height="24"
-                          fill="currentColor"
-                        ></use></svg
-                      ><time datetime="2022-01-01">3 days ago</time>
-                    </div>
-                    <span rel="author">Dollie Blair</span>
-                  </div>
-                </figure></a
-              >
-            </li>
-            <li class="navlist__item video-list__item">
-              <a href="#" class="link"
-                ><figure class="video-card">
-                  <div class="relative">
-                    <img
-                      src="public/cover6.jpg"
-                      class="video-card__cover video-card__cover_sm"
-                    /><time datetime="PT2M30S" class="video-card__duration"
-                      >6:40</time
-                    >
-                  </div>
-                  <figcaption class="title title_sm video-card__title">
-                    Telescopes 101
-                  </figcaption>
-                  <div class="video-card__info">
-                    <div class="video-card__info-block">
-                      <span>11k views</span
-                      ><svg
-                        viewBox="0 0 24 24"
-                        width="2"
-                        height="2"
-                        class="icon"
-                      >
-                        <use
-                          href="#icon-separator"
-                          width="24"
-                          height="24"
-                          fill="currentColor"
-                        ></use></svg
-                      ><time datetime="2022-01-01">3 days ago</time>
-                    </div>
-                    <span rel="author">Dollie Blair</span>
-                  </div>
-                </figure></a
-              >
-            </li>
-          </ul>
-        </section>
-        <section class="home-section">
-          <header class="section-header">
-            <h2 class="title title_lg home-section__title">Recommended</h2>
-            <div class="content-extra ml-auto lg:flex items-center gap-40">
-              <div class="flex items-center gap-10">
-                <button class="btn btn_round">
-                  <svg viewBox="0 0 24 24" width="11" height="11" class="icon">
+      <main class="content content_player">
+        <figure class="relative">
+          <svg viewBox="0 0 320 180" width="100%" class="lg:rounded">
+            <image
+              href="public/cover18.jpg"
+              width="100%"
+              height="100%"
+              preserveAspectRatio="xMidYMid slice"
+            ></image>
+          </svg>
+          <div class="player-controls lg:hidden">
+            <button class="btn shrink-0 btn_def">
+              <svg viewBox="0 0 24 24" width="12" height="12" class="icon">
+                <use
+                  href="#icon-pause"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                ></use>
+              </svg></button
+            ><time class="text-10">1:34</time>
+            <div class="player-progress w-full">
+              <div class="player-progress__track"></div>
+            </div>
+            <time class="text-10">-10:00</time
+            ><button class="btn shrink-0 btn_def">
+              <svg viewBox="0 0 24 24" width="12" height="12" class="icon">
+                <use
+                  href="#icon-volume"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                ></use>
+              </svg>
+            </button>
+          </div>
+          <div class="player-controls-hd">
+            <div class="flex justify-between">
+              <time class="text-16">1:34</time
+              ><time class="text-16">-10:00</time>
+            </div>
+            <div class="player-progress w-full">
+              <div class="player-progress__track"></div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex gap-40">
+                <button class="btn shrink-0 btn_def">
+                  <svg viewBox="0 0 24 24" width="20" height="20" class="icon">
                     <use
-                      href="#icon-chevron-left"
+                      href="#icon-pause"
                       width="24"
                       height="24"
                       fill="currentColor"
                     ></use>
                   </svg></button
-                ><button class="btn btn_round">
-                  <svg viewBox="0 0 24 24" width="11" height="11" class="icon">
+                ><button class="btn shrink-0 btn_def">
+                  <svg viewBox="0 0 24 24" width="20" height="20" class="icon">
                     <use
-                      href="#icon-chevron-right"
+                      href="#icon-rewind"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                    ></use>
+                  </svg>
+                </button>
+                <div class="flex items-center gap-10">
+                  <button class="btn shrink-0 btn_def">
+                    <svg
+                      viewBox="0 0 24 24"
+                      width="20"
+                      height="20"
+                      class="icon"
+                    >
+                      <use
+                        href="#icon-volume"
+                        width="24"
+                        height="24"
+                        fill="currentColor"
+                      ></use>
+                    </svg>
+                  </button>
+                  <div class="player-volume"><div></div></div>
+                </div>
+              </div>
+              <div class="color-em flex gap-20">
+                <button class="btn shrink-0 btn_def">
+                  <svg viewBox="0 0 24 24" width="20" height="20" class="icon">
+                    <use
+                      href="#icon-cc"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                    ></use>
+                  </svg></button
+                ><button class="btn shrink-0 btn_def">
+                  <svg viewBox="0 0 24 24" width="20" height="20" class="icon">
+                    <use
+                      href="#icon-cog"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                    ></use>
+                  </svg></button
+                ><button class="btn shrink-0 btn_def">
+                  <svg viewBox="0 0 24 24" width="20" height="20" class="icon">
+                    <use
+                      href="#icon-theater"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                    ></use>
+                  </svg></button
+                ><button class="btn shrink-0 btn_def">
+                  <svg viewBox="0 0 24 24" width="20" height="20" class="icon">
+                    <use
+                      href="#icon-fullscreen"
                       width="24"
                       height="24"
                       fill="currentColor"
@@ -840,121 +716,78 @@
                 </button>
               </div>
             </div>
-          </header>
-          <ul class="navlist video-list">
-            <li class="navlist__item video-list__item">
-              <a href="#" class="link"
-                ><figure class="video-card">
-                  <div class="relative">
-                    <img
-                      src="public/cover7.jpg"
-                      class="video-card__cover video-card__cover_lg"
-                    /><time datetime="PT2M30S" class="video-card__duration"
-                      >2:30</time
-                    >
-                  </div>
-                  <figcaption class="title title_sm video-card__title">
-                    A Brief History of Creation
-                  </figcaption>
-                  <div class="video-card__info">
-                    <div class="video-card__info-block">
-                      <span>80k views</span
-                      ><svg
-                        viewBox="0 0 24 24"
-                        width="2"
-                        height="2"
-                        class="icon"
-                      >
-                        <use
-                          href="#icon-separator"
-                          width="24"
-                          height="24"
-                          fill="currentColor"
-                        ></use></svg
-                      ><time datetime="2022-01-01">3 days ago</time>
-                    </div>
-                    <span rel="author">Dollie Blair</span>
-                  </div>
-                </figure></a
+          </div>
+        </figure>
+        <header
+          class="flex flex-col gap-10 my-10 lg:my-20 lg:flex-row lg:items-end lg:justify-between w-full"
+        >
+          <div class="flex flex-col px-16 lg:p-0">
+            <div class="flex justify-between items-center">
+              <h2 class="title title_sm lg:text-36">
+                Dude You'Re Getting A Telescope
+              </h2>
+              <button class="btn lg:hidden btn_def">
+                <svg viewBox="0 0 24 24" width="20" height="20" class="icon">
+                  <use
+                    href="#icon-chevron-down"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+            <span class="color-em">123k views</span>
+          </div>
+          <div class="flex gap-30 overflow-auto pl-16 py-10 lg:p-0 lg:gap-10">
+            <button class="btn btn_secondary">
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                class="icon color-em"
               >
-            </li>
-            <li class="navlist__item video-list__item">
-              <a href="#" class="link"
-                ><figure class="video-card">
-                  <div class="relative">
-                    <img
-                      src="public/cover8.jpg"
-                      class="video-card__cover video-card__cover_lg"
-                    /><time datetime="PT2M30S" class="video-card__duration"
-                      >8:00</time
-                    >
-                  </div>
-                  <figcaption class="title title_sm video-card__title">
-                    Selecting the Right Hotel
-                  </figcaption>
-                  <div class="video-card__info">
-                    <div class="video-card__info-block">
-                      <span>123k views</span
-                      ><svg
-                        viewBox="0 0 24 24"
-                        width="2"
-                        height="2"
-                        class="icon"
-                      >
-                        <use
-                          href="#icon-separator"
-                          width="24"
-                          height="24"
-                          fill="currentColor"
-                        ></use></svg
-                      ><time datetime="2022-01-01">3 days ago</time>
-                    </div>
-                    <span rel="author">Dollie Blair</span>
-                  </div>
-                </figure></a
+                <use
+                  href="#icon-like"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                ></use></svg
+              ><span>123k</span></button
+            ><button class="btn shrink-0 btn_secondary">
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                class="icon color-em"
               >
-            </li>
-            <li class="navlist__item video-list__item">
-              <a href="#" class="link"
-                ><figure class="video-card">
-                  <div class="relative">
-                    <img
-                      src="public/cover9.jpg"
-                      class="video-card__cover video-card__cover_lg"
-                    /><time datetime="PT2M30S" class="video-card__duration"
-                      >6:40</time
-                    >
-                  </div>
-                  <figcaption class="title title_sm video-card__title">
-                    Asteroids
-                  </figcaption>
-                  <div class="video-card__info">
-                    <div class="video-card__info-block">
-                      <span>11k views</span
-                      ><svg
-                        viewBox="0 0 24 24"
-                        width="2"
-                        height="2"
-                        class="icon"
-                      >
-                        <use
-                          href="#icon-separator"
-                          width="24"
-                          height="24"
-                          fill="currentColor"
-                        ></use></svg
-                      ><time datetime="2022-01-01">3 days ago</time>
-                    </div>
-                    <span rel="author">Dollie Blair</span>
-                  </div>
-                </figure></a
+                <use
+                  href="#icon-dislike"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                ></use></svg
+              ><span>23k</span></button
+            ><button class="btn shrink-0 btn_secondary">
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                class="icon color-em"
               >
-            </li>
-          </ul>
-        </section>
-        <section class="home-section">
-          <header class="section-header">
-            <svg viewBox="0 0 24 24" class="avatar avatar_lg content-extra">
+                <use
+                  href="#icon-share"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                ></use></svg
+              ><span>Share</span>
+            </button>
+          </div>
+        </header>
+        <section class="subscribe flex justify-between items-center w-full">
+          <div class="flex gap-10 items-center w-full lg:items-start">
+            <svg viewBox="0 0 24 24" class="avatar avatar_lg shrink-0">
               <image
                 href="public/food.jpg"
                 width="24"
@@ -963,255 +796,240 @@
                 preserveAspectRatio="xMidYMid slice"
               ></image>
             </svg>
-            <h2 class="title title_lg home-section__title">Food &amp; Drink</h2>
-            <small class="small content-extra"
-              >Recommended channel for you</small
-            >
-            <div class="content-extra ml-auto lg:flex items-center gap-40">
-              <button class="btn btn_primary">Subscribe 2.3m</button>
-              <div class="flex items-center gap-10">
-                <button class="btn btn_round">
-                  <svg viewBox="0 0 24 24" width="11" height="11" class="icon">
-                    <use
-                      href="#icon-chevron-left"
-                      width="24"
-                      height="24"
-                      fill="currentColor"
-                    ></use>
-                  </svg></button
-                ><button class="btn btn_round">
-                  <svg viewBox="0 0 24 24" width="11" height="11" class="icon">
-                    <use
-                      href="#icon-chevron-right"
-                      width="24"
-                      height="24"
-                      fill="currentColor"
-                    ></use>
-                  </svg>
-                </button>
+            <div class="flex flex-col gap-10 max-w-prose">
+              <div class="flex flex-col gap-5 lg:gap-10">
+                <h2 class="title title_sm">Food &amp; Drink</h2>
+                <span class="color-em text-10 lg:hidden">245k subscribed</span
+                ><span class="color-em text-10 hidden lg:block"
+                  >Published on 14 Jun 2019</span
+                >
               </div>
+              <p class="hidden lg:block">
+                A successful marketing plan relies heavily on the pulling-power
+                of advertising copy. Writing result-oriented ad copy is
+                difficult, as it must appeal to, entice, and convince consumers
+                to take action. There is no magic formula to write perfect ad
+                copy; it is based on a number of factors, including ad
+                placement, demographic, even the consumer’s mood when they see
+                your ad.
+              </p>
+              <button class="btn hidden lg:flex text-20 color-em btn_def">
+                Show More
+              </button>
             </div>
-          </header>
-          <ul class="navlist video-list">
-            <li class="navlist__item video-list__item">
-              <a href="#" class="link"
-                ><figure class="video-card">
-                  <div class="relative">
-                    <img
-                      src="public/cover10.jpg"
-                      class="video-card__cover video-card__cover_sm"
-                    /><time datetime="PT2M30S" class="video-card__duration"
-                      >2:30</time
-                    >
-                  </div>
-                  <figcaption class="title title_sm video-card__title">
-                    Astronomy or Astrology
-                  </figcaption>
-                  <div class="video-card__info">
-                    <div class="video-card__info-block">
-                      <span>80k views</span
-                      ><svg
-                        viewBox="0 0 24 24"
-                        width="2"
-                        height="2"
-                        class="icon"
-                      >
-                        <use
-                          href="#icon-separator"
-                          width="24"
-                          height="24"
-                          fill="currentColor"
-                        ></use></svg
-                      ><time datetime="2022-01-01">3 days ago</time>
-                    </div>
-                    <span rel="author">Dollie Blair</span>
-                  </div>
-                </figure></a
-              >
-            </li>
-            <li class="navlist__item video-list__item">
-              <a href="#" class="link"
-                ><figure class="video-card">
-                  <div class="relative">
-                    <img
-                      src="public/cover11.jpg"
-                      class="video-card__cover video-card__cover_sm"
-                    /><time datetime="PT2M30S" class="video-card__duration"
-                      >8:00</time
-                    >
-                  </div>
-                  <figcaption class="title title_sm video-card__title">
-                    Advertising Outdoors
-                  </figcaption>
-                  <div class="video-card__info">
-                    <div class="video-card__info-block">
-                      <span>123k views</span
-                      ><svg
-                        viewBox="0 0 24 24"
-                        width="2"
-                        height="2"
-                        class="icon"
-                      >
-                        <use
-                          href="#icon-separator"
-                          width="24"
-                          height="24"
-                          fill="currentColor"
-                        ></use></svg
-                      ><time datetime="2022-01-01">3 days ago</time>
-                    </div>
-                    <span rel="author">Dollie Blair</span>
-                  </div>
-                </figure></a
-              >
-            </li>
-            <li class="navlist__item video-list__item">
-              <a href="#" class="link"
-                ><figure class="video-card">
-                  <div class="relative">
-                    <img
-                      src="public/cover12.jpg"
-                      class="video-card__cover video-card__cover_sm"
-                    /><time datetime="PT2M30S" class="video-card__duration"
-                      >6:40</time
-                    >
-                  </div>
-                  <figcaption class="title title_sm video-card__title">
-                    Radio Astronomy
-                  </figcaption>
-                  <div class="video-card__info">
-                    <div class="video-card__info-block">
-                      <span>11k views</span
-                      ><svg
-                        viewBox="0 0 24 24"
-                        width="2"
-                        height="2"
-                        class="icon"
-                      >
-                        <use
-                          href="#icon-separator"
-                          width="24"
-                          height="24"
-                          fill="currentColor"
-                        ></use></svg
-                      ><time datetime="2022-01-01">3 days ago</time>
-                    </div>
-                    <span rel="author">Dollie Blair</span>
-                  </div>
-                </figure></a
-              >
-            </li>
-            <li class="navlist__item video-list__item">
-              <a href="#" class="link"
-                ><figure class="video-card">
-                  <div class="relative">
-                    <img
-                      src="public/cover13.jpg"
-                      class="video-card__cover video-card__cover_sm"
-                    /><time datetime="PT2M30S" class="video-card__duration"
-                      >6:40</time
-                    >
-                  </div>
-                  <figcaption class="title title_sm video-card__title">
-                    A Good Autoresponder
-                  </figcaption>
-                  <div class="video-card__info">
-                    <div class="video-card__info-block">
-                      <span>45k views</span
-                      ><svg
-                        viewBox="0 0 24 24"
-                        width="2"
-                        height="2"
-                        class="icon"
-                      >
-                        <use
-                          href="#icon-separator"
-                          width="24"
-                          height="24"
-                          fill="currentColor"
-                        ></use></svg
-                      ><time datetime="2022-01-01">2 months ago</time>
-                    </div>
-                    <span rel="author">Dollie Blair</span>
-                  </div>
-                </figure></a
-              >
-            </li>
-            <li class="navlist__item video-list__item">
-              <a href="#" class="link"
-                ><figure class="video-card">
-                  <div class="relative">
-                    <img
-                      src="public/cover14.jpg"
-                      class="video-card__cover video-card__cover_sm"
-                    /><time datetime="PT2M30S" class="video-card__duration"
-                      >1:56</time
-                    >
-                  </div>
-                  <figcaption class="title title_sm video-card__title">
-                    Baby Monitoring Technology
-                  </figcaption>
-                  <div class="video-card__info">
-                    <div class="video-card__info-block">
-                      <span>86k views</span
-                      ><svg
-                        viewBox="0 0 24 24"
-                        width="2"
-                        height="2"
-                        class="icon"
-                      >
-                        <use
-                          href="#icon-separator"
-                          width="24"
-                          height="24"
-                          fill="currentColor"
-                        ></use></svg
-                      ><time datetime="2022-01-01">7 days ago</time>
-                    </div>
-                    <span rel="author">Dollie Blair</span>
-                  </div>
-                </figure></a
-              >
-            </li>
-            <li class="navlist__item video-list__item">
-              <a href="#" class="link"
-                ><figure class="video-card">
-                  <div class="relative">
-                    <img
-                      src="public/cover15.jpg"
-                      class="video-card__cover video-card__cover_sm"
-                    /><time datetime="PT2M30S" class="video-card__duration"
-                      >8:56</time
-                    >
-                  </div>
-                  <figcaption class="title title_sm video-card__title">
-                    Asteroids
-                  </figcaption>
-                  <div class="video-card__info">
-                    <div class="video-card__info-block">
-                      <span>8k views</span
-                      ><svg
-                        viewBox="0 0 24 24"
-                        width="2"
-                        height="2"
-                        class="icon"
-                      >
-                        <use
-                          href="#icon-separator"
-                          width="24"
-                          height="24"
-                          fill="currentColor"
-                        ></use></svg
-                      ><time datetime="2022-01-01">3 days ago</time>
-                    </div>
-                    <span rel="author">Dollie Blair</span>
-                  </div>
-                </figure></a
-              >
-            </li>
-          </ul>
+            <button class="btn color-primary ml-auto lg:hidden btn_def">
+              Subscribe</button
+            ><button class="btn hidden lg:flex ml-auto btn_primary">
+              Subscribe 2.3m
+            </button>
+          </div>
         </section>
       </main>
+      <aside class="upnext">
+        <section class="flex justify-between my-10">
+          <h2 class="title title_lg">Next</h2>
+          <div class="flex items-center gap-10">
+            <label for="autoplay" class="uppercase text-10 font-bold"
+              >Autoplay</label
+            ><span class="switch"
+              ><input
+                type="checkbox"
+                id="autoplay"
+                class="switch__input"
+                checked="" /><span class="switch__thumb"></span
+              ><span class="switch__track"></span
+            ></span>
+          </div>
+        </section>
+        <ul class="navlist flex flex-col gap-20">
+          <li class="navlist__item">
+            <a href="#" class="link"
+              ><figure class="video-card">
+                <div class="relative">
+                  <img
+                    src="public/cover10.jpg"
+                    class="video-card__cover video-card__cover_sm"
+                  /><time datetime="PT2M30S" class="video-card__duration"
+                    >2:30</time
+                  >
+                </div>
+                <figcaption class="title title_sm video-card__title">
+                  A Brief History of Creation
+                </figcaption>
+                <div class="video-card__info">
+                  <div class="video-card__info-block">
+                    <span>80k views</span
+                    ><svg viewBox="0 0 24 24" width="2" height="2" class="icon">
+                      <use
+                        href="#icon-separator"
+                        width="24"
+                        height="24"
+                        fill="currentColor"
+                      ></use></svg
+                    ><time datetime="2022-01-01">3 days ago</time>
+                  </div>
+                  <span rel="author">Dollie Blair</span>
+                </div>
+              </figure></a
+            >
+          </li>
+          <li class="navlist__item">
+            <a href="#" class="link"
+              ><figure class="video-card">
+                <div class="relative">
+                  <img
+                    src="public/cover11.jpg"
+                    class="video-card__cover video-card__cover_sm"
+                  /><time datetime="PT2M30S" class="video-card__duration"
+                    >8:00</time
+                  >
+                </div>
+                <figcaption class="title title_sm video-card__title">
+                  Selecting the Right Hotel
+                </figcaption>
+                <div class="video-card__info">
+                  <div class="video-card__info-block">
+                    <span>123k views</span
+                    ><svg viewBox="0 0 24 24" width="2" height="2" class="icon">
+                      <use
+                        href="#icon-separator"
+                        width="24"
+                        height="24"
+                        fill="currentColor"
+                      ></use></svg
+                    ><time datetime="2022-01-01">3 days ago</time>
+                  </div>
+                  <span rel="author">Dollie Blair</span>
+                </div>
+              </figure></a
+            >
+          </li>
+          <li class="navlist__item">
+            <a href="#" class="link"
+              ><figure class="video-card">
+                <div class="relative">
+                  <img
+                    src="public/cover19.jpg"
+                    class="video-card__cover video-card__cover_sm"
+                  /><time datetime="PT2M30S" class="video-card__duration"
+                    >6:40</time
+                  >
+                </div>
+                <figcaption class="title title_sm video-card__title">
+                  Asteroids
+                </figcaption>
+                <div class="video-card__info">
+                  <div class="video-card__info-block">
+                    <span>11k views</span
+                    ><svg viewBox="0 0 24 24" width="2" height="2" class="icon">
+                      <use
+                        href="#icon-separator"
+                        width="24"
+                        height="24"
+                        fill="currentColor"
+                      ></use></svg
+                    ><time datetime="2022-01-01">3 days ago</time>
+                  </div>
+                  <span rel="author">Dollie Blair</span>
+                </div>
+              </figure></a
+            >
+          </li>
+          <li class="navlist__item">
+            <a href="#" class="link"
+              ><figure class="video-card">
+                <div class="relative">
+                  <img
+                    src="public/cover4.jpg"
+                    class="video-card__cover video-card__cover_sm"
+                  /><time datetime="PT2M30S" class="video-card__duration"
+                    >6:40</time
+                  >
+                </div>
+                <figcaption class="title title_sm video-card__title">
+                  Telescopes 101
+                </figcaption>
+                <div class="video-card__info">
+                  <div class="video-card__info-block">
+                    <span>11k views</span
+                    ><svg viewBox="0 0 24 24" width="2" height="2" class="icon">
+                      <use
+                        href="#icon-separator"
+                        width="24"
+                        height="24"
+                        fill="currentColor"
+                      ></use></svg
+                    ><time datetime="2022-01-01">3 days ago</time>
+                  </div>
+                  <span rel="author">Dollie Blair</span>
+                </div>
+              </figure></a
+            >
+          </li>
+          <li class="navlist__item">
+            <a href="#" class="link"
+              ><figure class="video-card">
+                <div class="relative">
+                  <img
+                    src="public/cover5.jpg"
+                    class="video-card__cover video-card__cover_sm"
+                  /><time datetime="PT2M30S" class="video-card__duration"
+                    >6:40</time
+                  >
+                </div>
+                <figcaption class="title title_sm video-card__title">
+                  Telescopes 101
+                </figcaption>
+                <div class="video-card__info">
+                  <div class="video-card__info-block">
+                    <span>11k views</span
+                    ><svg viewBox="0 0 24 24" width="2" height="2" class="icon">
+                      <use
+                        href="#icon-separator"
+                        width="24"
+                        height="24"
+                        fill="currentColor"
+                      ></use></svg
+                    ><time datetime="2022-01-01">3 days ago</time>
+                  </div>
+                  <span rel="author">Dollie Blair</span>
+                </div>
+              </figure></a
+            >
+          </li>
+          <li class="navlist__item">
+            <a href="#" class="link"
+              ><figure class="video-card">
+                <div class="relative">
+                  <img
+                    src="public/cover6.jpg"
+                    class="video-card__cover video-card__cover_sm"
+                  /><time datetime="PT2M30S" class="video-card__duration"
+                    >6:40</time
+                  >
+                </div>
+                <figcaption class="title title_sm video-card__title">
+                  Telescopes 101
+                </figcaption>
+                <div class="video-card__info">
+                  <div class="video-card__info-block">
+                    <span>11k views</span
+                    ><svg viewBox="0 0 24 24" width="2" height="2" class="icon">
+                      <use
+                        href="#icon-separator"
+                        width="24"
+                        height="24"
+                        fill="currentColor"
+                      ></use></svg
+                    ><time datetime="2022-01-01">3 days ago</time>
+                  </div>
+                  <span rel="author">Dollie Blair</span>
+                </div>
+              </figure></a
+            >
+          </li>
+        </ul>
+      </aside>
     </div>
   </body>
 </html>
